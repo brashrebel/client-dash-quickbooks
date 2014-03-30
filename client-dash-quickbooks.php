@@ -12,7 +12,7 @@ $cdq_active_tab = $_GET['tab'];
 ?>
 <a href="?page=account&tab=billing" class="nav-tab <?php echo $cdq_active_tab == 'billing' ? 'nav-tab-active' : ''; ?>">Billing</a>
 <?php }
-add_action('cd_account_tabs', 'cdq_tab');
+add_action('cd_account_tabs_after', 'cdq_tab');
 
 // Modify the tab content path to include file from this plugin
 function cdq_path($cd_tab_path) {
